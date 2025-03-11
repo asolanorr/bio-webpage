@@ -1,0 +1,100 @@
+* {
+    font-family: Lato, sans-serif !important;
+    color: #2d3436;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.grain {
+    position: absolute;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.container .header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.container .header .left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.container .header .left .nameContainer {
+    position: absolute;
+    top: 3.5rem;
+    margin-left: 1.5rem;
+}
+
+.container .header .left .circle {
+    width: 10rem;
+    height: 10rem;
+    background-color: #f1c40f;
+    border-radius: 50%;
+}
+
+.container .header .left .title {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.container .header .left .name {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.container .header .left .title strong {
+    font-size: 1rem;
+    font-weight: bold !important;
+}
+.container .header .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.aboutMe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.aboutMe h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.aboutMe span {
+    position: absolute;
+    top: 1rem;
+    width: 14rem;
+    height: 1rem;
+    background-color: #f1c40f;
+    z-index: -1;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

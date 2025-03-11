@@ -1,11 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Bio</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Alejandro Solano | Full Stack Engineer</title>
 </head>
+
 <body>
-    
+    <div class="grain">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 2000 2000" width="2000" height="2000">
+            <defs>
+                <linearGradient gradientTransform="rotate(-360, 0.5, 0.5)" x1="50%" y1="0%" x2="50%" y2="100%"
+                    id="gggrain-gradient2">
+                    <stop stop-color="hsl(0, 0%, 92%)" stop-opacity="1" offset="-0%"></stop>
+                    <stop stop-color="rgba(255,255,255,0)" stop-opacity="0" offset="100%"></stop>
+                </linearGradient>
+                <linearGradient gradientTransform="rotate(360, 0.5, 0.5)" x1="50%" y1="0%" x2="50%" y2="100%"
+                    id="gggrain-gradient3">
+                    <stop stop-color="hsl(55, 100%, 80%)" stop-opacity="1"></stop>
+                    <stop stop-color="rgba(255,255,255,0)" stop-opacity="0" offset="100%"></stop>
+                </linearGradient>
+                <filter id="gggrain-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox"
+                    primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.78" numOctaves="2" seed="98" stitchTiles="stitch"
+                        x="0%" y="0%" width="100%" height="100%" result="turbulence"></feTurbulence>
+                    <feColorMatrix type="saturate" values="0" x="0%" y="0%" width="100%" height="100%" in="turbulence"
+                        result="colormatrix"></feColorMatrix>
+                    <feComponentTransfer x="0%" y="0%" width="100%" height="100%" in="colormatrix"
+                        result="componentTransfer">
+                        <feFuncR type="linear" slope="3"></feFuncR>
+                        <feFuncG type="linear" slope="3"></feFuncG>
+                        <feFuncB type="linear" slope="3"></feFuncB>
+                    </feComponentTransfer>
+                    <feColorMatrix x="0%" y="0%" width="100%" height="100%" in="componentTransfer" result="colormatrix2"
+                        type="matrix" values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 18 -10"></feColorMatrix>
+                </filter>
+                <filter id="gggrain-saturate" x="-20%" y="-20%" width="140%" height="140%"
+                    filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feColorMatrix type="saturate" values="3" x="0%" y="0%" width="100%" height="100%"
+                        in="SourceGraphic" result="colormatrix"></feColorMatrix>
+                </filter>
+            </defs>
+            <g filter="url(#gggrain-saturate)">
+                <rect width="100%" height="100%" fill="hsl(0, 0%, 92%)"></rect>
+                <rect width="100%" height="100%" fill="url(#gggrain-gradient3)"></rect>
+                <rect width="100%" height="100%" fill="url(#gggrain-gradient2)"></rect>
+                <rect width="100%" height="100%" fill="transparent" filter="url(#gggrain-filter)" opacity="1"
+                    style="mix-blend-mode: normal"></rect>
+            </g>
+        </svg>
+    </div>
+
+    <main class="container">
+
+        <!-- Header section -->
+        <header class="header">
+            <div class="left">
+                <span class="circle"></span>
+                <div class="nameContainer">
+                    <h1 class="name">Alejandro Solano</h1>
+
+                    <h2 class="title">
+                        Full Stack Engineer | UI /UX Enthusiast
+                    </h2>
+                </div>
+            </div>
+            <div class="right">
+                <p>Email: alejandro.sr@rytsolucion.io</p>
+                <p>Phone: +506 8801-0944</p>
+            </div>
+        </header>
+
+        <!-- About me section -->
+        <section class="aboutMe">
+            <span></span>
+            <h2>little bit about me...</h2>
+            <p>
+                I'm a passionate and creative developer specializing in user-friendly
+                software solutions. With a strong background in web development, I
+                thrive on turning complex problems into elegant and intuitive designs.
+                I believe that great software should not only be functional but also
+                delightful to use, and I strive to create experiences that users love.
+            </p>
+            <br />
+            <p>
+                My journey in software development began back when I was 13 years old,
+                when I was learning how to use a computer I immediately fell in love
+                with this world and started to be more curious about how everything
+                works, so I started to research and learn by myself. Since then, I've
+                honed my skills in web development and a little bit of UI/UX design,
+                allowing me to grow my career in software development in a short time.
+            </p>
+            <br />
+            <p>
+                I'm constantly seeking new challenges and opportunities to learn and
+                grow, and I'm excited about the possibility of bringing my unique
+                blend of creativity and technical expertise to your team. When I'm not
+                coding, you can find me playing some video games, on social activities
+                (I'm an extroverted type of person, ENFP-A personality) or even coding
+                just for fun! Another interesting thing about me is that right now I'm
+                developing an amazing passion for music!
+            </p>
+            <br />
+            <p>
+                As you may noticed I'm also passionate about great-designed apps, and
+                I try to make a positive impact through my work to achieve this goal.
+                I'm always open to new collaborations and projects, so if you're
+                looking for a developer who is not only skilled but also passionate
+                about creating exceptional user experiences, what are we waiting for?
+                let's make beautiful and outstanding apps together!
+            </p>
+        </section>
+
+        <!-- Skills section -->
+        <section class="skills">
+            <skill-component skill-name="HTML" experience="+5 years"></skill-component>
+            <skill-component skill-name="CSS" experience="+5 years"></skill-component>
+            <skill-component skill-name="JavaScript" experience="+5 years"></skill-component>
+            <skill-component skill-name="TypeScript" experience="+2 years"></skill-component>
+            <skill-component skill-name="React.js" experience="+4 years"></skill-component>
+            <skill-component skill-name="Vue.js" experience="+1 years"></skill-component>
+            <skill-component skill-name="Node.js" experience="+5 years"></skill-component>
+            <skill-component skill-name="Mobile Development" experience="+1 years"></skill-component>
+            <skill-component skill-name=".NET Core" experience="+1 years"></skill-component>
+            <skill-component skill-name="UI/UX Design" experience="+3 years"></skill-component>
+        </section>
+    </main>
+
+    <script src="/js/skillComponent.js"></script>
 </body>
+
 </html>
